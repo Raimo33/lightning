@@ -67,7 +67,9 @@ RUN apt-get update -qq && \
         ca-certificates \
         python3 \
         git \
+        autoconf \
         automake \
+        libtool \
         build-essential \
         pkg-config \
         libicu-dev \
@@ -75,7 +77,9 @@ RUN apt-get update -qq && \
         flex \
         wget \
         jq \
-        qemu-user-static
+        gettext \
+        qemu-user-static \
+        protobuf-compiler
 
 ARG ZLIB_VERSION=1.2.13
 ARG SQLITE_YEAR=2019
